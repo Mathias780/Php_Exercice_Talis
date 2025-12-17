@@ -1,4 +1,11 @@
 <?php
+
+
+// Fonction EstPair
+function EstPair($n) {
+    return ($n % 2 == 0);
+}
+
 // Exercice 1
 
 "Boucle for (0 à 24)"
@@ -18,6 +25,7 @@ while ($i > 0) {
 // Exercice 3
 
 // "Motif 1n jusqu'à 25"
+
 for ($ligne = 1; $ligne <= 25; $ligne++) {
     for ($col = 1; $col <= $ligne; $col++) {
         echo $col . " ";
@@ -25,3 +33,22 @@ for ($ligne = 1; $ligne <= 25; $ligne++) {
     echo "<br>";
 }
 
+// Exercice 4
+
+$somme = 0;
+for ($i = 1; $i <= 30; $i++) {
+    $somme += $i;
+}
+echo "Somme = " . $somme . "<br>";
+
+// Exercice 5
+
+$test = 7;
+echo $test . " est pair ? " . (EstPair($test) ? "oui" : "non") . "<br>";
+
+titre("6) Nombres pairs de 1 à 20");
+for ($i = 1; $i <= 20; $i++) {
+    if (EstPair($i)) {
+        echo $i . "<br>";
+    }
+}
