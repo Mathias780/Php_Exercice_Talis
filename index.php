@@ -34,7 +34,6 @@ function Hypotenuse($b, $c) {
 // Exercice 1
 
 titre("Boucle for (0 à 24)");
-"Boucle for (0 à 24)"
 for ($i = 0; $i < 25; $i++) {
     echo $i . "<br>";
 }
@@ -135,6 +134,17 @@ echo "<h1>C'est un plaisir de vous voir " .
      $identitePersonne["prenom"] . " " .
      $identitePersonne["nom"] . "!(" .
      $identitePersonne["metier"] . ")</h1>";
+
+
+// Exercice 12
+
+titre("Valeurs de 6 lettres");
+$fighters = ['Zelda','Samus','Bowser','Peach','Lucina'];
+for ($i = 0; $i < count($fighters); $i++) {
+    if (strlen($fighters[$i]) == 6) {
+        echo $fighters[$i] . "<br>";
+    }
+}
 ?>
 
 </body>
