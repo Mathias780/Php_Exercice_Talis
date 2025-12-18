@@ -46,9 +46,32 @@ echo "Somme = " . $somme . "<br>";
 $test = 7;
 echo $test . " est pair ? " . (EstPair($test) ? "oui" : "non") . "<br>";
 
-titre("6) Nombres pairs de 1 à 20");
+// Exercice 6
+
 for ($i = 1; $i <= 20; $i++) {
     if (EstPair($i)) {
         echo $i . "<br>";
     }
 }
+
+// Exercice 7
+
+$b = 3;
+$c = 4;
+echo "b = $b, c = $c => hypoténuse = " . Hypotenuse($b, $c) . "<br>";
+
+// Exercice 8
+
+$heure = 16; // change la valeur pour tester
+if ($heure >= 6 && $heure < 12) {
+    echo "C'est le matin<br>";
+} elseif ($heure >= 12 && $heure < 18) {
+    echo "C'est l'après-midi<br>";
+} else {
+    echo "C'est le soir<br>";
+}
+
+// Exercice 9
+
+$nombre = 10;
+echo EstPair($nombre) ? "$nombre est pair<br>" : "$nombre est impair<br>";
