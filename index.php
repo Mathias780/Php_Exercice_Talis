@@ -14,6 +14,23 @@ function EstPair($n) {
 }
 
 
+// Fonction Pythagore
+function Hypotenuse($b, $c) {
+    return sqrt(($b * $b) + ($c * $c));
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Php is great !</title>
+</head>
+<body>
+    
+<?php
+
 // Exercice 1
 
 titre("Boucle for (0 à 24)");
@@ -118,3 +135,7 @@ echo "<h1>C'est un plaisir de vous voir " .
      $identitePersonne["prenom"] . " " .
      $identitePersonne["nom"] . "!(" .
      $identitePersonne["metier"] . ")</h1>";
+?>
+
+</body>
+</html>
